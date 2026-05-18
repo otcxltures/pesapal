@@ -20,6 +20,20 @@ npm run test:coverage
 npm run build
 ```
 
+## Deploying to Vercel
+
+When importing this repository in Vercel, use these settings:
+
+- Framework Preset: `Vite`
+- Root Directory: `project_pesa`
+- Install Command: `npm ci`
+- Build Command: `npm run build`
+- Output Directory: `dist`
+
+The included `vercel.json` sends all routes back to `index.html`, so React Router pages such as `/login`, `/signup`, `/tracker`, and `/summary` work after refresh.
+
+After deployment, add your Vercel domain to Firebase Authentication authorized domains.
+
 ## Release
 
 Current version: `1.0.0`
